@@ -1,6 +1,6 @@
 import React from 'react';
-import CollabCode from '../../img/logo.png';
+import EltonCosta from '../../img/mlogo.svg';
 
-const Logo = () => (<img src={CollabCode} alt="Logo da CollabCode" />);
+const Logo = () => (<img src={EltonCosta} alt="Logo do Elton Costa" />);
 
 export default Logo;
