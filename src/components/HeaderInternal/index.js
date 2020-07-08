@@ -1,4 +1,6 @@
 import React from 'react';
+import './styles.css';
+
 import LogoElton from '../../objects/LogoElton';
 import AboutLink from '../../objects/AboutLink';
 import IconClose from '../../objects/IconClose';
