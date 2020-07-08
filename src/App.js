@@ -3,6 +3,7 @@ import './App.css';
 
 import Checkbox from './objects/Checkbox';
 import About from './objects/About';
+import LogoElton from './objects/LogoElton';
 import AboutLink from './objects/AboutLink';
 import IconClose from './objects/IconClose';
 import Header from './components/Header';
@@ -13,7 +14,9 @@ const App = () => (
       <Header />
       <Hashtag />
       <Checkbox id="show" value="show" type="checkbox" content="Mostrar eventos" />
+
       <About>
+        <LogoElton />
         <AboutLink className="-light" />
         <IconClose />
       </About>

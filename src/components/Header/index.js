@@ -1,15 +1,15 @@
 import React from 'react';
 import './styles.css';
-import Logo from '../../objects/Logo';
+import LogoElton from '../../objects/LogoElton';
 import AboutLink from  '../../objects/AboutLink';
 import Menu from '../../objects/Menu';
 
 const Header = () => (
     <header className="header">
-        <Logo />
+        <LogoElton />
         <AboutLink />
         <Menu />
     </header>
 );
 
-export default Header;
+export default Header;   
