@@ -12,8 +12,8 @@ const ProfileUser = () => (
         <dt className="title">Dev Front-End Jr</dt>
         <dd className="description">Meu objetivo é encontrar uma oportunidade de emprego, e assim aprofundar e melhorar minhas habilidades em programação.</dd>
         <dd className="socials" >
-            <IconSocial src={GitHub} alt="Logo do GitHub"/>
-            <IconSocial src={Linkedin} alt="Logo do Linkedin"/>
+            <IconSocial action="https://github.com/elton87" src={GitHub} alt="Logo do GitHub"/>
+            <IconSocial action="https://www.linkedin.com/in/elton-costa-a886b51b2" src={Linkedin} alt="Logo do Linkedin"/>
 
         </dd>
     </dl>
