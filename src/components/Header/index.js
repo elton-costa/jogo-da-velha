@@ -4,11 +4,11 @@ import LogoElton from '../../objects/LogoElton';
 import AboutLink from  '../../objects/AboutLink';
 import Menu from '../../objects/Menu';
 
-const Header = () => (
+const Header = ({ onClick }) => (
     <header className="header">
         <LogoElton />
-        <AboutLink />
-        <Menu />
+        <AboutLink onClick={onClick}/>
+        <Menu onClick={onClick}/>
     </header>
 );
 
