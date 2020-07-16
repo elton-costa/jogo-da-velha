@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 
 import Checkbox from './objects/Checkbox';
-import About from './objects/About';
+import LayerDark from './objects/LayerDark';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 import HeaderInternal from './components/HeaderInternal';
@@ -19,10 +19,10 @@ const App = () => {
       <Header onClick={handleClickAdd}/>
       <Hashtag />
       <Checkbox id="show" value="show" type="checkbox" content="Mostrar eventos" />
-      <About className={activeAbout}>
+      <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
-      </About>
+      </LayerDark>
     
     </main>
   )
