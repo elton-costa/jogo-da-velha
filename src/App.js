@@ -17,7 +17,7 @@ const App = () => {
   const handleClickRemove = () => setActiveAbout("");
 
   const handleClick = () => {
-  setHistoryGame("-active")
+  setHistoryGame(old => old == "-active" ? "" : "-active")
 }
 
   return (
