@@ -3,12 +3,16 @@ import './styles.css';
 import playerX from '../../img/player-x.png';
 import playerO from '../../img/player-o.png';
 
+const handleClick = () => {
+    console.log("Clicou!")
+}
+
 const PlayerGame = ({player = false}) => {
     const players = [];
     players['x'] = playerX;
     players['o'] = playerO;
 
-    return (<button className="player-game">
+    return (<button onClick={handleClick} className="player-game">
         {player && <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />}
     </button>)
 };
