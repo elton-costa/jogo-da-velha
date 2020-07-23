@@ -16,7 +16,8 @@ const App = () => {
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout("");
 
-  const addHistory = (player) => {setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`])};
+  const addHistory = (player) => {
+    setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`])};
 
   return (
     <main id="main" className="app">

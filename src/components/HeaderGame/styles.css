@@ -14,3 +14,21 @@
 .header-game > .menu-game {
     width: 25px;
 }
+
+@media (min-width: 740px) {
+    .header-game {
+        background-color: var(--color-tenth);
+    }
+
+    .header-game > .logo-elton {
+        width: 230px;
+    }
+
+    .header-game > .about-link {
+        font-size: var(--size-medium);
+    }
+
+    .header-game > .menu-game {
+        width: 30px;
+    }
+}
