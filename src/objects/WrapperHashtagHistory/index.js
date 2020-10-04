@@ -1,9 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react';
+import InputCheckbox from '../InputCheckbox';
+import HashtagGame from '../../components/HashtagGame';
+import HistoryGame from '../../components/HistoryGame';
 
-const WrapperHashtagHistory = ({children, active= false}) => (
+const WrapperHashtagHistory = () => {
+    const [history, setHistory] = useState(["Start"]);
+    const [active, setActive] = useState(false);
+
+    const addHistory = player => setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
+
+    const showHideHistory = () => setActive(old => !!!old);
+
+    const changeHistory = key => setHistory(old => old.slice(0, key+1));
+
+    return (
     <div className={`wrapper-hashtagHistory ${active && '-active'}`}>
-        {children}
+         <HashtagGame callback={addHistory}/>
+         <InputCheckbox onClick={showHideHistory} id="show" value="show" type="checkbox" content="Mostrar eventos" />
+
+        <HistoryGame history={history} onClick={changeHistory}/>
     </div>
-)
+)};
 
 export default WrapperHashtagHistory;
